@@ -48,6 +48,8 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons" -- Icons used by a lot of plugins
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "windwp/nvim-autopairs" --Autopairs integrates with both cmp and treesitter
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
 
     -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
