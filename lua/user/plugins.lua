@@ -83,9 +83,13 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   --Autopair
-  use "windwp/nvim-autopairs" --Autopairs integrates with both cmp and ...
+  use "windwp/nvim-autopairs" --Autopairs integrates with both cmp and treesitter
+
+  --Comment
+  use "numToStr/Comment.nvim" -- Easily comment stuff
 
   -- Git
   use "lewis6991/gitsigns.nvim"

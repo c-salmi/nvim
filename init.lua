@@ -9,4 +9,5 @@ require "user.lualine"
 require "user.treesitter"
 require "user.autopairs"
 require "user.gitsigns"
+require "user.comment"
 
