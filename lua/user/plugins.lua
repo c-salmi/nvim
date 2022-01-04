@@ -84,6 +84,9 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
 
+  --Autopair
+  use "windwp/nvim-autopairs" --Autopairs integrates with both cmp and ...
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
