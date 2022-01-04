@@ -58,8 +58,11 @@ return packer.startup(function(use)
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
-  -- airline
-  use "vim-airline/vim-airline"
+  -- line
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   -- colorschemes
   use "flazz/vim-colorschemes"
@@ -67,6 +70,9 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+
+  -- Debugging
+  -- use "puremourning/vimspector" -- enable DAP
 
    -- Telescope
   use "nvim-telescope/telescope.nvim"
