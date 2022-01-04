@@ -44,6 +44,10 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use "kyazdani42/nvim-tree.lua" -- File explorer
+  use "kyazdani42/nvim-web-devicons" -- Icons used by a lot of plugins
+  use "numToStr/Comment.nvim" -- Easily comment stuff
+  use "windwp/nvim-autopairs" --Autopairs integrates with both cmp and treesitter
 
     -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -59,10 +63,7 @@ return packer.startup(function(use)
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- line
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
+  use 'nvim-lualine/lualine.nvim'
 
   -- colorschemes
   use "flazz/vim-colorschemes"
@@ -84,12 +85,6 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use 'JoosepAlviste/nvim-ts-context-commentstring'
-
-  --Autopair
-  use "windwp/nvim-autopairs" --Autopairs integrates with both cmp and treesitter
-
-  --Comment
-  use "numToStr/Comment.nvim" -- Easily comment stuff
 
   -- Git
   use "lewis6991/gitsigns.nvim"

@@ -10,4 +10,5 @@ require "user.treesitter"
 require "user.autopairs"
 require "user.gitsigns"
 require "user.comment"
+require "user.nvim-tree"
 
